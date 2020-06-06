@@ -192,9 +192,6 @@ int check_winner()
 }
 
 
-
-
-
 void board()
 {
 	system("cls");
