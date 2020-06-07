@@ -17,6 +17,7 @@ void board();
 void clearsquare();
 string name1,name2,reply;
 int count1=0,count2=0;
+void loading();
 
 int main()
 {
@@ -53,6 +54,7 @@ int main()
 	cin>>name2;
 	cout<<RESET;
 	start:
+	loading();
 	do
 	{
 		board();
@@ -138,7 +140,10 @@ int main()
 	cin>>reply;
 	clearsquare();
 	if(reply[0]=='Y' || reply[0]=='y')
+	{
+		system("cls");
 		goto start;
+	}
 	else
 	{
 		cout<<"\tQ. Do you want to Start New Game or Exit the Game?(y/n)\n\t==>";
@@ -192,6 +197,9 @@ int check_winner()
 }
 
 
+
+
+
 void board()
 {
 	system("cls");
@@ -226,4 +234,29 @@ void clearsquare()
 	{
 		square[i]=j;
 	}
+}
+
+void loading()
+{
+	
+    cout<<"\n\n";
+    cout<<GREEN<<"\tPlease Wait....\n";
+    cout<<"\tLoading ";
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+    cout<<". ";
+    Sleep(1000);
+   	cout<<RESET;
+    system("cls");
+    
 }
