@@ -258,5 +258,5 @@ void loading()
     Sleep(1000);
    	cout<<RESET;
     system("cls");
-    
+   
 }
